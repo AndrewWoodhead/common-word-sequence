@@ -4,7 +4,7 @@ import sys
 
 def read_input():
     complete_text = ''
-    with open(sys.argv[1], 'r') if len(sys.argv) > 1 else sys.stdin as f:
+    with open(sys.argv[1], 'r', encoding='UTF-8') if len(sys.argv) > 1 else sys.stdin as f:
         for line in f:
             complete_text = complete_text + line
     return complete_text
